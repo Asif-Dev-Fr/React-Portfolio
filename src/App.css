@@ -103,8 +103,17 @@ h1 {
   text-transform: uppercase;
   color: #2c3e50;
   font-size: 40px;
-  padding: 70px 0 10px 0;
+  padding: 35px 0 10px 0;
+  font-weight: 800;
 }
+
+#section-2 .section-2 h4 {
+  color: #2c3e50;
+  font-size: 32px;
+  padding: 20px 0 10px 0;
+  font-weight: 600;
+}
+
 
 #section-2 .section-2 .ligne {
   display: block;
@@ -114,22 +123,22 @@ h1 {
   margin: 0 auto;
 }
 
-.center {
+#section-2 .section-2 .center {
   margin: 40px auto 20px auto;
   justify-content: space-evenly;
 }
 
-.button-projet {
+#section-2 .section-2 .card .button-projet {
  background: #2c3e50; 
  color:white;
 }
 
-.card {
+#section-2 .section-2 .card {
   padding: 0;
-  width: 18rem;
+  margin: 15px;
 }
 
-.card img {
+#section-2 .section-2 .card img {
   height: 250px;
 }
 

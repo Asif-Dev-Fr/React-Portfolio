@@ -12,13 +12,21 @@ import SectionDeux from './Components/SectionDeux';
 const App = () => {
 
   const reactProjects = project.react;
+  const nodeProjects = project.nodejs;
+  const mernStackProjects = project.mernStack;
+  const othersProjects = project.others;
 
   return (
     <div className="App container-fluid p-0 m-0">
       <NavBarTop />
       <main>
         <SectionUn />
-        <SectionDeux reactProjects={reactProjects} />
+        <SectionDeux 
+          reactProjects={reactProjects} 
+          nodeProjects={nodeProjects} 
+          mernStackProjects={mernStackProjects}
+          othersProjects={othersProjects}
+        />
           
       </main>
 
