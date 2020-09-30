@@ -8,8 +8,7 @@ body {
 }
 
 .container-fluid {
-  background-color: rgb(136, 130, 212);
-  height: 100vh;
+  min-height: 100vh;
 }
 
 /* header */
@@ -127,6 +126,7 @@ h1 {
 
 .card {
   padding: 0;
+  width: 18rem;
 }
 
 .card img {
