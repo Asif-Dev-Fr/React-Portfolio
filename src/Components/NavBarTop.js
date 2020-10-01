@@ -5,7 +5,7 @@ const NavBarTop = () => {
         <header>
             <nav className="navbar fixed-top navbar-expand-lg navbar-dark ">
                 <div className="nom">
-                    <a className="navbar-brand homepage" href="#">KASSAMALI Asif</a>
+                    <a className="navbar-brand homepage" href="/">KASSAMALI Asif</a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -22,10 +22,10 @@ const NavBarTop = () => {
                                     Projets
                                 </a>
                                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a className="dropdown-item" href="#">React</a>
-                                    <a className="dropdown-item" href="#">Node.js</a>
-                                    <a className="dropdown-item" href="#">MERN Stack</a>
-                                    <a className="dropdown-item" href="#">Autres Technos</a>
+                                    <a className="dropdown-item" href="#react">React</a>
+                                    <a className="dropdown-item" href="#nodejs">Node.js</a>
+                                    <a className="dropdown-item" href="#mern">MERN Stack</a>
+                                    <a className="dropdown-item" href="#others">Autres Technos</a>
                                 </div>
                             </li>
                             <li className="nav-item">

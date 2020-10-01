@@ -6,7 +6,7 @@ const SectionUn = () => {
             <div className="section-1">
                 <img src="https://i.ibb.co/F0wMQTN/face-co.png" alt="avatar" id="avatar" />
                 <h1> KASSAMALI Asif </h1>
-                <span class="ligne"></span>
+                <span className="ligne"></span>
                 <h2> Développeur Web </h2>
             </div>
         </section>

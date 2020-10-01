@@ -2,7 +2,7 @@ const project = {
 
     react: [
         {
-            id: '001',
+            id: 'react-001',
             thumbnail: 'react1.JPG',
             alt: 'Movie Database App (React JS)',
             title: 'Movie Database App (React JS)',
@@ -10,7 +10,7 @@ const project = {
             link: 'https://asif-dev-fr.github.io/Movie-React-App/'
         },
         {
-            id: '002',
+            id: 'react-002',
             thumbnail: 'react2.JPG',
             alt: 'To Do App (React JS)',
             title: 'To Do App (React JS)',
@@ -18,7 +18,7 @@ const project = {
             link: 'https://asif-dev-fr.github.io/React-To-Do-List/'
         },
         {
-            id: '003',
+            id: 'react-003',
             thumbnail: 'react3.JPG',
             alt: 'Pixabay API Picture App',
             title: 'Picture App (React JS & Pixabay\'s API) ',
@@ -26,7 +26,7 @@ const project = {
             link: 'https://asif-dev-fr.github.io/Picture-React-App/'
         },
         {
-            id: '004',
+            id: 'react-004',
             thumbnail: 'react4.JPG',
             alt: 'React Leaflet US Map',
             title: 'US Map (React JS & Leaflet)',
@@ -34,7 +34,7 @@ const project = {
             link: 'https://asif-react-map.herokuapp.com/'
         },
         {
-            id: '005',
+            id: 'react-005',
             thumbnail: 'https://e7.pngegg.com/pngimages/914/758/png-clipart-github-social-media-computer-icons-logo-android-github-logo-computer-wallpaper.png.JPG',
             alt: 'Weather APP',
             title: 'Weather App(React JS, Open Weather Map & Leaflet)',
@@ -46,7 +46,7 @@ const project = {
 
     nodejs: [
         {
-            id: '001',
+            id: 'nodejs-001',
             thumbnail: 'nodejs1',
             alt: 'Deezer Music App Node.js Express',
             title: 'Deezer Music App (Node.js/Express)',
@@ -54,7 +54,7 @@ const project = {
             link: 'https://asif-node-js-music-app.herokuapp.com/'
         },
         {
-            id: '002',
+            id: 'nodejs-002',
             thumbnail: 'https://e7.pngegg.com/pngimages/914/758/png-clipart-github-social-media-computer-icons-logo-android-github-logo-computer-wallpaper.png',
             alt: 'Node.js Express Authentification',
             title: 'Authentification page (Node.js / Express / MongoDB)',
@@ -62,7 +62,7 @@ const project = {
             link: ''
         },
         {
-            id: '001',
+            id: 'nodejs-003',
             thumbnail: '',
             alt: '',
             title: '',
@@ -73,7 +73,7 @@ const project = {
 
     mernStack: [
         {
-            id: '001',
+            id: 'mern-001',
             thumbnail: '',
             alt: '',
             title: '',
@@ -84,7 +84,7 @@ const project = {
 
     others: [
         {
-            id: '001',
+            id: 'others-001',
             thumbnail: '',
             alt: '',
             title: '',
