@@ -7,6 +7,7 @@ import project from './Data/data';
 import NavBarTop from './Components/NavBarTop';
 import SectionUn from './Components/SectionUn';
 import SectionDeux from './Components/SectionDeux';
+import SectionTrois from './Components/SectionTrois';
 
 
 const App = () => {
@@ -27,6 +28,8 @@ const App = () => {
           mernStackProjects={mernStackProjects}
           othersProjects={othersProjects}
         />
+
+        <SectionTrois />
           
       </main>
 

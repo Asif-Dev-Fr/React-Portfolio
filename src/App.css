@@ -154,7 +154,7 @@ h1 {
   text-transform: uppercase;
   color: white;
   font-size: 40px;
-  padding: 70px 0 10px 0;
+  padding: 20px 0 10px 0;
 }
 
 #section-3 .section-3 .ligne {
@@ -170,6 +170,10 @@ h1 {
   margin: 10px auto 5px auto;
   font-size: 20px;
   color: white;
+}
+
+#section-3 .section-3 .text-section-3 p:last-child {
+  padding-bottom: 20px;
 }
 
 /* Section 4 */
