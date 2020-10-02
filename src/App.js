@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import './App.css';
 
@@ -18,18 +18,19 @@ import SectionTrois from './Components/SectionTrois';
 
 const App = () => {
 
-  useEffect(() => {
-    const changeBackground = () => {
-        const bodyElt = document.querySelector("body");
-        bodyElt.style.backgroundColor = '#18BC9C';
-    }
-    changeBackground()
-  }, []);
+  const [reactProjects, setReactProjects] = useState([]);
+  const [nodeProjects, setNodeProjects] = useState([]);
+  const [mernStackProjects, setMernStackProjects] = useState([]);
+  const [othersProjects, setOthersProjects] = useState([]);
 
-  const reactProjects = project.react;
-  const nodeProjects = project.nodejs;
-  const mernStackProjects = project.mernStack;
-  const othersProjects = project.others;
+  useEffect(() => {
+
+    setReactProjects(project.react);
+    setNodeProjects(project.nodejs);
+    setMernStackProjects(project.mernStack);
+    setOthersProjects(project.others);
+
+  }, []);
 
   return (
     <div className="App container-fluid p-0 m-0">
@@ -38,11 +39,13 @@ const App = () => {
         <main>
           <Switch>
             <Route exact path='/' component={SectionUn} />
-            <Route path='/projects/:technos' component={SectionDeux} 
-              reactProjects={reactProjects} 
-              nodeProjects={nodeProjects} 
-              mernStackProjects={mernStackProjects}
-              othersProjects={othersProjects}
+            <Route path='/projects/' 
+              render={() => <SectionDeux
+                reactProjects={reactProjects} 
+                nodeProjects={nodeProjects} 
+                mernStackProjects={mernStackProjects}
+                othersProjects={othersProjects} 
+              />} 
             />
 
             <Route path="/a-propos" component={SectionTrois} />

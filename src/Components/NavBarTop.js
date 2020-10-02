@@ -2,16 +2,7 @@ import React, {useEffect} from 'react';
 
 import { Link } from 'react-router-dom';
 
-const NavBarTop = () => {
-
-    useEffect(() => {
-        const changeBackground = () => {
-            const bodyElt = document.querySelector("body");
-            bodyElt.style.backgroundColor = '#FFFFFF';
-        }
-        changeBackground()
-    }, []);
-    
+const NavBarTop = () => {    
 
     return (
         <header>
@@ -30,14 +21,14 @@ const NavBarTop = () => {
                     <div className="form-inline">
                         <ul className="navbar-nav mr-auto droite">
                             <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Projets
-                                </a>
+                                </Link>
                                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <Link className="dropdown-item" to="/projects/#react" >React</Link>
-                                    <a className="dropdown-item" href="#nodejs">Node.js</a>
-                                    <a className="dropdown-item" href="#mern">MERN Stack</a>
-                                    <a className="dropdown-item" href="#others">Autres Technos</a>
+                                    <Link className="dropdown-item" to="/projects/react" >React</Link>
+                                    <Link className="dropdown-item" to="/projects/nodejs">Node.js</Link>
+                                    <Link className="dropdown-item" to="/projects/mern">MERN Stack</Link>
+                                    <Link className="dropdown-item" to="/projects/others">Autres Technos</Link>
                                 </div>
                             </li>
                             <li className="nav-item">
