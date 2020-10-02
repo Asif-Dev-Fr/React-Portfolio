@@ -2,6 +2,12 @@ import React from 'react';
 
 import './App.css';
 
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+
 import project from './Data/data';
 
 import NavBarTop from './Components/NavBarTop';
@@ -19,22 +25,25 @@ const App = () => {
 
   return (
     <div className="App container-fluid p-0 m-0">
-      <NavBarTop />
-      <main>
-        <SectionUn />
-        <SectionDeux 
-          reactProjects={reactProjects} 
-          nodeProjects={nodeProjects} 
-          mernStackProjects={mernStackProjects}
-          othersProjects={othersProjects}
-        />
+      <Router>
+        <NavBarTop />
+        <main>
+          <Switch>
+            <Route exact path='/' component={SectionUn} />
+            <Route path='/projects/:technos' component={SectionDeux} 
+              reactProjects={reactProjects} 
+              nodeProjects={nodeProjects} 
+              mernStackProjects={mernStackProjects}
+              othersProjects={othersProjects}
+            />
 
-        <SectionTrois />
-          
-      </main>
+            <Route path="/a-propos" component={SectionTrois} />
+          </Switch>
+            
+        </main>
 
 
-      
+      </Router>
     </div>
   );
 }

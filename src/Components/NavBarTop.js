@@ -1,11 +1,13 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 const NavBarTop = () => {
     return (
         <header>
             <nav className="navbar fixed-top navbar-expand-lg navbar-dark ">
                 <div className="nom">
-                    <a className="navbar-brand homepage" href="/">KASSAMALI Asif</a>
+                    <Link className="navbar-brand homepage" to="/">KASSAMALI Asif</Link>
                     <button className="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -29,7 +31,7 @@ const NavBarTop = () => {
                                 </div>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#section-3">A Propos</a>
+                                <Link to='/a-propos' className="nav-link" href="#section-3">A Propos</Link>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#section-4">Contact</a>

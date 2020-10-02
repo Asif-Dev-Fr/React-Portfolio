@@ -7,9 +7,6 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-.container-fluid {
-  min-height: 100vh;
-}
 
 /* header */
 
@@ -60,7 +57,7 @@ main {
 
 #section-1 {
   background: #18bc9c;
-  height:700px;
+  overflow: hidden;
   text-align: center;
 }
 
