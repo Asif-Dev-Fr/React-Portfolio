@@ -1,8 +1,18 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
 import { Link } from 'react-router-dom';
 
 const NavBarTop = () => {
+
+    useEffect(() => {
+        const changeBackground = () => {
+            const bodyElt = document.querySelector("body");
+            bodyElt.style.backgroundColor = '#FFFFFF';
+        }
+        changeBackground()
+    }, []);
+    
+
     return (
         <header>
             <nav className="navbar fixed-top navbar-expand-lg navbar-dark ">
@@ -24,7 +34,7 @@ const NavBarTop = () => {
                                     Projets
                                 </a>
                                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a className="dropdown-item" href="#react">React</a>
+                                    <Link className="dropdown-item" to="/projects/#react" >React</Link>
                                     <a className="dropdown-item" href="#nodejs">Node.js</a>
                                     <a className="dropdown-item" href="#mern">MERN Stack</a>
                                     <a className="dropdown-item" href="#others">Autres Technos</a>

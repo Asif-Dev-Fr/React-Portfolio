@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import './App.css';
 
@@ -17,6 +17,14 @@ import SectionTrois from './Components/SectionTrois';
 
 
 const App = () => {
+
+  useEffect(() => {
+    const changeBackground = () => {
+        const bodyElt = document.querySelector("body");
+        bodyElt.style.backgroundColor = '#18BC9C';
+    }
+    changeBackground()
+  }, []);
 
   const reactProjects = project.react;
   const nodeProjects = project.nodejs;
