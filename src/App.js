@@ -24,12 +24,11 @@ const App = () => {
   const [othersProjects, setOthersProjects] = useState([]);
 
   useEffect(() => {
-
+    // Données depuis le fichier data : 
     setReactProjects(project.react);
     setNodeProjects(project.nodejs);
     setMernStackProjects(project.mernStack);
     setOthersProjects(project.others);
-
   }, []);
 
   return (

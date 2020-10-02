@@ -74,7 +74,7 @@ const project = {
     mernStack: [
         {
             id: 'mern-001',
-            thumbnail: 'singapour.JPG',
+            thumbnail: 'https://www.weblife.fr/wp-content/uploads/2019/01/github-logo.png',
             alt: 'Singapour Expat MERN Stack',
             title: 'Singapour Expat MERN Stack',
             description: 'Projet en cours. Création d\'un blog pour les personnes qui veulent des important pour pouvoir s\'expatrier à Singapour',
