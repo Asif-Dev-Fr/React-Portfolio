@@ -5,7 +5,8 @@ import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  useLocation 
 } from "react-router-dom";
 
 import project from './Data/data';
@@ -23,7 +24,6 @@ const App = () => {
   const [nodeProjects, setNodeProjects] = useState([]);
   const [mernStackProjects, setMernStackProjects] = useState([]);
   const [othersProjects, setOthersProjects] = useState([]);
-  const [footerBottom, setFooterBottom] = useState(true);
 
   useEffect(() => {
     // Données depuis le fichier data : 
@@ -32,9 +32,12 @@ const App = () => {
     setMernStackProjects(project.mernStack);
     setOthersProjects(project.others);
 
-    window.location.pathname.includes('/projets/') ? setFooterBottom(false) : setFooterBottom(true);
-
   }, []);
+ 
+  
+  
+
+  
 
   return (
     <div className="App container-fluid p-0 m-0">
@@ -59,9 +62,7 @@ const App = () => {
             
         </main>
         
-        <footer className={
-          footerBottom === true  ? '' : 'footer-single-page'
-        }>
+        <footer>
           <Footer />
         </footer>
 

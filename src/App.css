@@ -181,38 +181,21 @@ h1 {
 }
 
 #section-4 .section-4 h2 {
-  text-transform: uppercase;
   color: #2c3e50;
-  font-size: 40px;
+  font-size: 50px;
   padding: 50px 0 10px 0;
 }
 
-#section-4 .section-4 div {
+#section-4 .section-4 .links {
   font-size: 28px;
 }
 
-#section-4 .section-4 .flex {
-  justify-content: space-around;
-}
-
-#section-4 .section-4 .flex div a {
+#section-4 .section-4 .links .linkedin a,
+#section-4 .section-4 .links .github a,
+#section-4 .section-4 .links .mail a {
   text-decoration: none;
-  color: #2c3e50
 }
 
-#section-4 .section-4 .flex div #numeroTel {
-  display: none;
-}
-
-#section-4 .section-4 .flex div #buttonTel, #section-4 .section-4 .flex div #hideButton {
-  border: none;
-  background: #FFF;
-  color: #2c3e50;
-}
-
-#section-4 .section-4 .flex div #numeroTel {
-  color: #2c3e50;
-}
 
 
 
