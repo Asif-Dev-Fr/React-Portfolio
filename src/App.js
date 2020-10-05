@@ -14,7 +14,8 @@ import NavBarTop from './Components/NavBarTop';
 import SectionUn from './Components/SectionUn';
 import SectionDeux from './Components/SectionDeux';
 import SectionTrois from './Components/SectionTrois';
-
+import SectionQuatre from './Components/SectionQuatre';
+import Footer from './Components/Footer';
 
 const App = () => {
 
@@ -22,6 +23,7 @@ const App = () => {
   const [nodeProjects, setNodeProjects] = useState([]);
   const [mernStackProjects, setMernStackProjects] = useState([]);
   const [othersProjects, setOthersProjects] = useState([]);
+  const [footerBottom, setFooterBottom] = useState(true);
 
   useEffect(() => {
     // Données depuis le fichier data : 
@@ -29,12 +31,15 @@ const App = () => {
     setNodeProjects(project.nodejs);
     setMernStackProjects(project.mernStack);
     setOthersProjects(project.others);
+
+    window.location.pathname.includes('/projets/') ? setFooterBottom(false) : setFooterBottom(true);
+
   }, []);
 
   return (
     <div className="App container-fluid p-0 m-0">
       <Router>
-        <NavBarTop />
+        <NavBarTop/>
         <main>
           <Switch>
             <Route exact path='/' component={SectionUn} />
@@ -44,13 +49,21 @@ const App = () => {
                 nodeProjects={nodeProjects} 
                 mernStackProjects={mernStackProjects}
                 othersProjects={othersProjects} 
-              />} 
+              />}
             />
 
-            <Route path="/a-propos" component={SectionTrois} />
+            <Route path="/a-propos" component={SectionTrois}/>
+
+            <Route path="/contact" component={SectionQuatre} />
           </Switch>
             
         </main>
+        
+        <footer className={
+          footerBottom === true  ? '' : 'footer-single-page'
+        }>
+          <Footer />
+        </footer>
 
 
       </Router>

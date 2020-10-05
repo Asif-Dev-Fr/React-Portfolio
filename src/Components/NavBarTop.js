@@ -35,7 +35,7 @@ const NavBarTop = () => {
                                 <Link to='/a-propos' className="nav-link" href="#section-3">A Propos</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#section-4">Contact</a>
+                                <Link className="nav-link" to="/contact">Contact</Link>
                             </li>
                         </ul>
                     </div>

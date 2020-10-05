@@ -51,7 +51,7 @@ header nav .collapse .form-inline .droite .nav-item .dropdown-menu .dropdown-ite
 
 main {
   margin-top: 80px;
-
+  min-height: 600px;
 }
 
 /* Section 1 */
@@ -62,7 +62,7 @@ main {
 }
 
 .section-1 {
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 #avatar {
@@ -151,7 +151,7 @@ h1 {
   text-transform: uppercase;
   color: white;
   font-size: 40px;
-  padding: 60px 0 10px 0;
+  padding: 40px 0 10px 0;
 }
 
 #section-3 .section-3 .ligne {
@@ -176,7 +176,7 @@ h1 {
 /* Section 4 */
 
 #section-4 {
-  min-height: 300px;
+  height: 70vh;
   text-align: center;
 }
 
@@ -222,12 +222,22 @@ footer {
   color: white;
   font-size: 22px;
   text-align: center;
-  height: 80px;
+  min-height: 60px;
+  line-height: 60px;
 }
+
+.footer-single-page {
+  /* Footer vers le bas si il n'y a pas de scroll nécessaire : */
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  z-index:-1;
+}
+
 
 footer p {
   margin: 0 auto;
-  padding: 20px 0;
 }
 
 /* Media Queries */

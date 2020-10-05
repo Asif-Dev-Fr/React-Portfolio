@@ -8,7 +8,7 @@ const SectionDeux = ({reactProjects, nodeProjects, mernStackProjects, othersProj
             const bodyElt = document.querySelector("body");
             bodyElt.style.backgroundColor = '#FFFFFF';
         }
-        changeBackground()
+        changeBackground();
     }, []);
 
     return(
