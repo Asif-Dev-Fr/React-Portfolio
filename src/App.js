@@ -22,7 +22,7 @@ const App = () => {
   const [reactProjects, setReactProjects] = useState([]);
   const [nodeProjects, setNodeProjects] = useState([]);
   const [mernStackProjects, setMernStackProjects] = useState([]);
-  const [othersProjects, setOthersProjects] = useState([]);
+  const [othersProjects, setOthersProjects] = useState([]); 
 
   useEffect(() => {
     // Données depuis le fichier data : 
