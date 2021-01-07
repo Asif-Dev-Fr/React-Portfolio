@@ -10,6 +10,14 @@ const project = {
             link: 'https://asif-dev-fr.github.io/Movie-React-App/'
         },
         {
+            id: 'react-005',
+            thumbnail: 'react5.JPG',
+            alt: 'Japanese Learning React Application',
+            title: 'Japanese Learning Application (React JS)',
+            description: 'Améliorer votre japonais grâce à cette application',
+            link: 'https://asif-nihongo-app.herokuapp.com/'
+        },
+        {
             id: 'react-002',
             thumbnail: 'react2.JPG',
             alt: 'To Do App (React JS)',
