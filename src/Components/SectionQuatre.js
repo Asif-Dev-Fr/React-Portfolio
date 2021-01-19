@@ -24,7 +24,7 @@ const SectionQuatre = () => {
                     <div className="github">
                         <i className="fab fa-github-square"></i>
                         &nbsp; Github : 
-                        <a href='https://github.com/Asif-Dev-Fr' target="_blank" rel="noopener noreferrer">                          Asif-Dev-Fr </a>
+                        <a href='https://github.com/Asif-Dev-Fr' target="_blank" rel="noopener noreferrer">Asif-Dev-Fr </a>
                     </div>
                     <div className="mail">
                         <i className="fas fa-envelope"></i>
