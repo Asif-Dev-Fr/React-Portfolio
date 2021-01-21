@@ -33,11 +33,6 @@ const App = () => {
 
   }, []);
  
-  
-  
-
-  
-
   return (
     <div className="App container-fluid p-0 m-0">
       <Router>
