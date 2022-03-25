@@ -42,7 +42,7 @@ const project = {
             link: 'https://asif-react-map.herokuapp.com/'
         },
         {
-            id: 'react-005',
+            id: 'react-006',
             thumbnail: 'https://www.weblife.fr/wp-content/uploads/2019/01/github-logo.png',
             alt: 'Weather APP',
             title: 'Weather App(React JS, Open Weather Map & Leaflet)',
