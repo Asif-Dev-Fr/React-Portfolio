@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { Route } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import ProjectCard from "./ProjectCard";
 
 const SectionDeux = ({
@@ -8,44 +8,49 @@ const SectionDeux = ({
   mernStackProjects,
   othersProjects,
 }) => {
+  const [langageChoosen, setLangageChoosen] = useState("");
+  let location = useLocation();
+
   const changeBackground = () => {
     const bodyElt = document.querySelector("body");
     bodyElt.style.backgroundColor = "#FFFFFF";
   };
 
+  const setContent = () => {
+    let split = location.pathname.split("/");
+    setLangageChoosen(split[2]);
+  };
+
   useEffect(() => {
     changeBackground();
-  }, []);
+    setContent();
+  });
+
+  const displayContent = () => {
+    if (!!langageChoosen) {
+      if (langageChoosen === "react") {
+        return <ProjectCard data={reactProjects} title="React" />;
+      } else if (langageChoosen === "nodejs") {
+        return <ProjectCard data={nodeProjects} title="Node.js" />;
+      } else if (langageChoosen === "mern") {
+        return <ProjectCard data={mernStackProjects} title="MERN Stack" />;
+      } else if (langageChoosen === "others") {
+        return <ProjectCard data={othersProjects} title="Autres technos" />;
+      }
+    }
+  };
 
   return (
-    <section id="section-2">
-      <div className="section-2">
-        <h2> Portfolio </h2>
-        <span className="ligne"></span>
-        <Route
-          path="/projects/react"
-          render={() => <ProjectCard data={reactProjects} title="React" />}
-        />
-        <Route
-          path="/projects/nodejs"
-          render={() => <ProjectCard data={nodeProjects} title="Node.js" />}
-        />
+    !!langageChoosen && (
+      <section id="section-2">
+        <div className="section-2">
+          <h2> Portfolio </h2>
+          <span className="ligne"></span>
 
-        <Route
-          path="/projects/mern"
-          render={() => (
-            <ProjectCard data={mernStackProjects} title="MERN Stack" />
-          )}
-        />
-
-        <Route
-          path="/projects/others"
-          render={() => (
-            <ProjectCard data={othersProjects} title="Autres technos" />
-          )}
-        />
-      </div>
-    </section>
+          {displayContent()}
+        </div>
+      </section>
+    )
   );
 };
 

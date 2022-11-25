@@ -18,6 +18,14 @@ const project = {
             link: 'https://asif-nihongo-app.herokuapp.com/'
         },
         {
+            id: 'react-007',
+            thumbnail: 'https://www.weblife.fr/wp-content/uploads/2019/01/github-logo.png',
+            alt: 'Mini Game',
+            title: 'Mini Game using Drag and Drop, external API and Boostrap',
+            description: "Création de plusieurs mini jeu (puzzle, morphion, piano, jeu de mémoire, wordle)",
+            link: 'https://github.com/Asif-Dev-Fr/React-Games-Lab'
+        },
+        {
             id: 'react-002',
             thumbnail: 'react2.JPG',
             alt: 'To Do App (React JS)',
@@ -59,7 +67,7 @@ const project = {
             alt: 'Deezer Music App Node.js Express',
             title: 'Deezer Music App (Node.js/Express)',
             description: 'Tout les extraits de vos chansons préféres sur cette Music App utilisant l\'API de Deezer',
-            link: 'https://asif-node-js-music-app.herokuapp.com/'
+            link: 'https://github.com/Asif-Dev-Fr/Music-NodeJS-App'
         },
         {
             id: 'nodejs-002',

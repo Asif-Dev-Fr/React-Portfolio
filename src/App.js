@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import "./App.css";
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import project from "./Data/data";
 
@@ -32,24 +32,24 @@ const App = () => {
       <Router>
         <NavBarTop />
         <main>
-          <Switch>
-            <Route exact path="/" component={SectionUn} />
+          <Routes>
+            <Route exact path="/" element={<SectionUn />} />
             <Route
-              path="/projects/"
-              render={() => (
+              path="/projects/:langage"
+              element={
                 <SectionDeux
                   reactProjects={reactProjects}
                   nodeProjects={nodeProjects}
                   mernStackProjects={mernStackProjects}
                   othersProjects={othersProjects}
                 />
-              )}
+              }
             />
 
-            <Route path="/a-propos" component={SectionTrois} />
+            <Route path="/a-propos" element={<SectionTrois />} />
 
-            <Route path="/contact" component={SectionQuatre} />
-          </Switch>
+            <Route path="/contact" element={<SectionQuatre />} />
+          </Routes>
         </main>
 
         <footer>

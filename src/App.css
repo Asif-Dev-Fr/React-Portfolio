@@ -4,9 +4,8 @@
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
-
 
 /* header */
 
@@ -40,13 +39,20 @@ header nav .collapse .form-inline .droite .nav-item .nav-link {
 }
 
 header nav .collapse .form-inline .droite .nav-item .dropdown-menu {
-  background-color: #FFF;
+  background-color: #fff;
 }
 
-header nav .collapse .form-inline .droite .nav-item .dropdown-menu .dropdown-item {
+header
+  nav
+  .collapse
+  .form-inline
+  .droite
+  .nav-item
+  .dropdown-menu
+  .dropdown-item {
   color: #2c3e50;
 }
- 
+
 /* Main */
 
 main {
@@ -111,7 +117,6 @@ h1 {
   font-weight: 600;
 }
 
-
 #section-2 .section-2 .ligne {
   display: block;
   height: 2px;
@@ -126,8 +131,8 @@ h1 {
 }
 
 #section-2 .section-2 .card .button-projet {
- background: #2c3e50; 
- color:white;
+  background: #2c3e50;
+  color: white;
 }
 
 #section-2 .section-2 .card {
@@ -144,7 +149,7 @@ h1 {
 #section-3 {
   min-height: 520px;
   text-align: center;
-  background: #18BC9C;
+  background: #18bc9c;
 }
 
 #section-3 .section-3 h2 {
@@ -177,27 +182,31 @@ h1 {
 
 #section-4 {
   height: 70vh;
-  text-align: center;
 }
 
 #section-4 .section-4 h2 {
   color: #2c3e50;
   font-size: 50px;
   padding: 50px 0 10px 0;
+  text-align: center;
 }
 
 #section-4 .section-4 .links {
   font-size: 28px;
+  width: 50%;
+  margin: 0 auto;
 }
+
+#section-4 .section-4 .links div {
+  margin-left: 128px;
+}
+
 
 #section-4 .section-4 .links .linkedin a,
 #section-4 .section-4 .links .github a,
 #section-4 .section-4 .links .mail a {
   text-decoration: none;
 }
-
-
-
 
 /* Footer */
 footer {
@@ -211,13 +220,12 @@ footer {
 
 .footer-single-page {
   /* Footer vers le bas si il n'y a pas de scroll nécessaire : */
-  position:absolute;
-  bottom:0;
-  left:0;
-  right:0;
-  z-index:-1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
 }
-
 
 footer p {
   margin: 0 auto;
@@ -225,90 +233,83 @@ footer p {
 
 /* Media Queries */
 @media (max-width: 991px) {
-
-  main, footer {
-      width: 100%;
+  main,
+  footer {
+    width: 100%;
   }
 
   /* header */
 
   .homepage {
-      font-size: 25px;
+    font-size: 25px;
   }
 
   .form-inline {
-      background:  #2c3e50;
-      
+    background: #2c3e50;
   }
 
   .navbar-nav {
-      text-align: center;
+    text-align: center;
   }
 
   .droite {
-      text-align: center !important;
-      width: 100%;
+    text-align: center !important;
+    width: 100%;
   }
-
 
   /* section 1 */
   #avatar {
-      width: 85%;
-      height: auto;
+    width: 85%;
+    height: auto;
   }
 
   #section-1 .section-1 h1 {
-      font-size: 50px;
-      padding: 5px;
+    font-size: 50px;
+    padding: 5px;
   }
 
   /* Section 2 */
 
   .center {
-      margin: 20px auto 10px auto;
+    margin: 20px auto 10px auto;
   }
 
   .card {
-      margin-top: 5px;
+    margin-top: 5px;
   }
-
 
   /* Section 3 */
 
   #section-3 {
-      width: 100%;
-      overflow: hidden;
-      
+    width: 100%;
+    overflow: hidden;
   }
 
   #section-3 .section-3 h3 {
-      font-size: 30px;
+    font-size: 30px;
   }
 
   #section-3 .section-3 .ligne {
-      width: 35%;
-
+    width: 35%;
   }
-  
+
   .formation {
-      margin-top: 15px;
-  }               
-
-  
-  .exp-1, .exp-2, .form-1, .form-2, .form-3, .form-4, .form-5 {
-      font-size: 20px;
-
+    margin-top: 15px;
   }
-  
+
+  .exp-1,
+  .exp-2,
+  .form-1,
+  .form-2,
+  .form-3,
+  .form-4,
+  .form-5 {
+    font-size: 20px;
+  }
+
   /* Section 4 */
   #section-4 {
-      width: 90%;
-      margin: 0 auto;
+    width: 90%;
+    margin: 0 auto;
   }
-  
-    
-
-
 }
-
-
