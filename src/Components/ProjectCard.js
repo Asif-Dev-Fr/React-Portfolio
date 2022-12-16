@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 const ProjectCard = ({data, title}) => {
-  const [card, setCard] = useState([]);
+  const [card, setCard] = useState(data);
   useEffect(() => {
       setCard(data)
   }, [data])

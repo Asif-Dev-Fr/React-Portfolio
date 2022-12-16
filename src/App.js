@@ -18,6 +18,7 @@ const App = () => {
   const [nodeProjects, setNodeProjects] = useState([]);
   const [mernStackProjects, setMernStackProjects] = useState([]);
   const [othersProjects, setOthersProjects] = useState([]);
+  const [vanillaJs, setVanillaJs] = useState([]);
 
   useEffect(() => {
     // Données depuis le fichier data :
@@ -25,6 +26,7 @@ const App = () => {
     setNodeProjects(project.nodejs);
     setMernStackProjects(project.mernStack);
     setOthersProjects(project.others);
+    setVanillaJs(project.vanillaJS);
   }, []);
 
   return (
@@ -42,6 +44,7 @@ const App = () => {
                   nodeProjects={nodeProjects}
                   mernStackProjects={mernStackProjects}
                   othersProjects={othersProjects}
+                  vanillaJs={vanillaJs}
                 />
               }
             />

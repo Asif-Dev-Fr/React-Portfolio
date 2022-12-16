@@ -7,6 +7,7 @@ const SectionDeux = ({
   nodeProjects,
   mernStackProjects,
   othersProjects,
+  vanillaJs,
 }) => {
   const [langageChoosen, setLangageChoosen] = useState("");
   let location = useLocation();
@@ -30,6 +31,8 @@ const SectionDeux = ({
     if (!!langageChoosen) {
       if (langageChoosen === "react") {
         return <ProjectCard data={reactProjects} title="React" />;
+      } else if (langageChoosen === "vanillaJS") {
+        return <ProjectCard data={vanillaJs} title="Vanilla Javascript" />;
       } else if (langageChoosen === "nodejs") {
         return <ProjectCard data={nodeProjects} title="Node.js" />;
       } else if (langageChoosen === "mern") {
@@ -46,7 +49,6 @@ const SectionDeux = ({
         <div className="section-2">
           <h2> Portfolio </h2>
           <span className="ligne"></span>
-
           {displayContent()}
         </div>
       </section>

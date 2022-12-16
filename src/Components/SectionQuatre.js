@@ -14,7 +14,7 @@ const SectionQuatre = () => {
     return(
         <section id="section-4">
             <div className="section-4">
-                <h2>Contactez-moi</h2>
+                <h2>Contact me</h2>
                 <div className='links'>
                     <div className="linkedin">
                         <i className="fab fa-linkedin"></i> 
@@ -29,7 +29,7 @@ const SectionQuatre = () => {
                     <div className="mail">
                         <i className="fas fa-envelope"></i>
                         &nbsp; Email : 
-                        <a href='asif.k.dev@gmail.com' target="_blank" rel="noopener noreferrer"> Envoyez un email </a>
+                        <a href='asif.k.dev@gmail.com' target="_blank" rel="noopener noreferrer"> Send an email </a>
                     </div>
                 </div>
             </div> 
