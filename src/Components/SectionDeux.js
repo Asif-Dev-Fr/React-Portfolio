@@ -38,7 +38,7 @@ const SectionDeux = ({
       } else if (langageChoosen === "mern") {
         return <ProjectCard data={mernStackProjects} title="MERN Stack" />;
       } else if (langageChoosen === "others") {
-        return <ProjectCard data={othersProjects} title="Autres technos" />;
+        return <ProjectCard data={othersProjects} title="Other languages" />;
       }
     }
   };

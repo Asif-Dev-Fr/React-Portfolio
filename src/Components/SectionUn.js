@@ -20,7 +20,7 @@ const SectionUn = () => {
         />
         <h1> KASSAMALI Asif </h1>
         <span className="ligne"></span>
-        <h2> Développeur Web </h2>
+        <h2> Developer Fullstack </h2>
       </div>
     </section>
   );

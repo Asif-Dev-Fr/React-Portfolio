@@ -29,7 +29,7 @@ const NavBarTop = () => {
                                     <Link className="dropdown-item" to="/projects/vanillaJS" >Vanilla JS</Link>
                                     <Link className="dropdown-item" to="/projects/nodejs">Node.js</Link>
                                     <Link className="dropdown-item" to="/projects/mern">MERN Stack</Link>
-                                    <Link className="dropdown-item" to="/projects/others">Autres Technos</Link>
+                                    <Link className="dropdown-item" to="/projects/others">Others languages</Link>
                                 </div>
                             </li>
                             <li className="nav-item">

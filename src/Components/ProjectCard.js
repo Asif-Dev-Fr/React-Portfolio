@@ -30,8 +30,8 @@ const ProjectCard = ({data, title}) => {
                 rel="noopener noreferrer"
               >
                 {project.thumbnail.includes("https://")
-                  ? "Accèder au code"
-                  : "Accèder au site"}
+                  ? "View website"
+                  : "View code"}
               </a>
             </div>
           </div>
